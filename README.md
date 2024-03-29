@@ -25,13 +25,13 @@ mkdir compulab-nxp-bsp && cd compulab-nxp-bsp
 
 * NXP
 ```
-repo init -u https://github.com/nxp-imx/imx-manifest.git -b imx-linux-mickledore -m imx-6.1.55-2.2.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest.git -b imx-linux-nanbield -m imx-6.6.3-1.0.0.xml
 ```
 
 * CompuLab
 ```
 mkdir -p .repo/local_manifests
-wget --directory-prefix .repo/local_manifests https://raw.githubusercontent.com/compulab-yokneam/meta-bsp-imx8mp/mickledore-2.2.0/scripts/meta-bsp-imx8mp.xml
+wget --directory-prefix .repo/local_manifests https://raw.githubusercontent.com/compulab-yokneam/meta-bsp-imx8mp/nanbield/scripts/meta-bsp-imx8mp.xml
 ```
 
 * Sync Them all
@@ -46,7 +46,7 @@ source compulab-setup-env -b build-${MACHINE}
 ```
 
 * Enable the required dram setting's subset:<br>
-Use [Get the product DRAM configuration ](https://github.com/compulab-yokneam/meta-bsp-imx8mp/blob/mickledore-2.2.0/Documentation/dram.md) for more details
+Use [Get the product DRAM configuration ](https://github.com/compulab-yokneam/meta-bsp-imx8mp/blob/nanbield/Documentation/dram.md) for more details
 
 ```
 sed -i '$ a DRAM_CONF = "d2d4"' ${BUILDDIR}/conf/local.conf
