@@ -2,6 +2,10 @@
 
 # Configuring the build
 
+## Install packages on you pc
+
+    sudo apt install git-lfs bison sharutils tree chrpath diffstat gawk liblz4-tool
+
 ## Setup Yocto environment
 
 * WorkDir:
