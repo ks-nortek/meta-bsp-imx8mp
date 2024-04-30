@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  yocto_build:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ../:/meta-bsp-imx8mp
+    working_dir: /meta-bsp-imx8mp
+    command: sleep infinity
