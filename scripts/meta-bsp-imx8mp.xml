@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
  <manifest>
  <remote fetch="https://github.com/compulab-yokneam" name="compulab"/>
+ <remote fetch="https://github.com/nxp-imx-support" name="nxp"/>
 
     <project name="meta-compulab" remote="compulab" revision="7c245d415ae64384231301ffcaa214fabc4f9440" path="sources/meta-compulab"/>
     <project name="meta-compulab-bsp" remote="compulab" revision="ce589e31390af092287f553032e3cabff7346f39" path="sources/meta-compulab-bsp"/>
@@ -9,5 +10,7 @@
     <project name="meta-bsp-imx8mp" remote="compulab" revision="ucm-imx8m-plus-r3.0" path="sources/meta-bsp-imx8mp" >
         <linkfile src="tools/compulab-setup-env" dest="compulab-setup-env"/>
     </project>
+
+    <project name="meta-robot-platform" remote="nxp" revision="3df76e687403f256a9c93b35bfc5b7a749524d20" path="sources/meta-robot-platform"/>
 
  </manifest>

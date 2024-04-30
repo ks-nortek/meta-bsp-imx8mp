@@ -7,5 +7,6 @@ BBLAYERS += " \
 	${BSPDIR}/sources/meta-compulab-bsp/meta-bsp \
 	${BSPDIR}/sources/meta-compulab-bsp/meta-devtool \
 	${BSPDIR}/sources/meta-compulab-uefi \
+	${BSPDIR}/sources/meta-robot-platform \
 "
 BBLAYERS += "${BSPDIR}/sources/meta-imx8mp-isp"

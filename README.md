@@ -23,7 +23,7 @@ mkdir compulab-nxp-bsp && cd compulab-nxp-bsp
 * CompuLab
 ```
 mkdir -p .repo/local_manifests
-wget --directory-prefix .repo/local_manifests https://raw.githubusercontent.com/compulab-yokneam/meta-bsp-imx8mp/ucm-imx8m-plus-r3.0/scripts/meta-bsp-imx8mp.xml
+cp ../scripts/meta-bsp-imx8mp.xml .repo/local_manifests/
 ```
 
 * NXP
