@@ -16,15 +16,15 @@ mkdir compulab-nxp-bsp && cd compulab-nxp-bsp
 
 ## Initialize repo manifests
 
-* NXP
-```
-repo init -u https://github.com/nxp-imx/imx-manifest.git -b imx-linux-mickledore -m imx-6.1.55-2.2.0.xml
-```
-
 * CompuLab
 ```
 mkdir -p .repo/local_manifests
 wget --directory-prefix .repo/local_manifests https://raw.githubusercontent.com/compulab-yokneam/meta-bsp-imx8mp/ucm-imx8m-plus-r3.0/scripts/meta-bsp-imx8mp.xml
+```
+
+* NXP
+```
+repo init -u https://github.com/nxp-imx/imx-manifest.git -b imx-linux-mickledore -m imx-6.1.55-2.2.0.xml
 ```
 
 * Sync Them all
