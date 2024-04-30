@@ -28,6 +28,9 @@ echo "############### Step 7: Syncing the repo again ###############"
 cd ..
 repo sync
 
+#Machine needs to be set again :/
+MACHINE=ucm-imx8m-plus
+export MACHINE
 echo "############### Step 8: Setting up the environment again ###############"
 source setup-environment build-${MACHINE}
 
